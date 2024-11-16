@@ -1,6 +1,6 @@
 
 //============= menu command ================
-const {readEnv} = require('../lib/database')
+const {readEnv} = require('../config')
 const {cmd , commands} = require('../command')
 const os = require("os")
 const {runtime} = require('../lib/functions')
