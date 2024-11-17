@@ -4,7 +4,7 @@ const { PixaldrainDL } = require("pixaldrain-sinhalasub");
 
 // JID Share Command (share)
 cmd({
-    pattern: "share",
+    pattern: "uththo",
     desc: "Share movie details, quality options, and download link with a JID (group or contact).",
     category: "pky",
     react: "🔗",
