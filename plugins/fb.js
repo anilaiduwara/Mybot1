@@ -165,3 +165,47 @@ reply(e)
 });
 
 
+cmd({
+    pattern: "drlink",
+    react: "📥",
+    dontAddCommandList: true,
+    filename: __filename
+}, async (conn, mek, m, { from, q, isMe, reply }) => {
+	
+    if (!q) {
+        return await reply('*Please provide a direct URL!*');
+    }
+
+
+    try {
+    const data = q.split("&")[0]
+        const datas = q.split("&")[1]
+
+
+        const mediaUrl = data.trim();
+
+        const response = await axios.get(mediaUrl, { responseType: 'arraybuffer' });
+        const mediaBuffer = Buffer.from(response.data, 'binary');
+
+
+
+
+        const message = {
+            document: mediaBuffer,
+	    caption: `${datas}
+     
+   *BOTGE NAMA DPN*`,
+            mimetype: "video/mp4",
+            fileName: `KAMATHI EKAK.mp4`,
+        };
+
+        await conn.sendMessage(datas, message);
+
+        await conn.sendMessage(from, { react: { text: '✔️', key: mek.key } });
+    } catch (error) {
+        console.error('Error fetching or sending', error);
+        await conn.sendMessage(from, '*Error fetching or sending *', { quoted: mek });
+    }
+});
+ 
+
