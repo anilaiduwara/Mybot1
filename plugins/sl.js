@@ -5,7 +5,7 @@ const axios = require('axios');
 
 // Movie search command
 cmd({
-    pattern: "movie",
+    pattern: "http",
     desc: "Search for a movie and get details and download options.",
     category: "pky",
     react: "🔍",
