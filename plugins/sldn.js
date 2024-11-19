@@ -90,8 +90,8 @@ async (conn, mek, m, { from, q, reply }) => {
                             url: directLink
                         },
                         mimetype: 'video/mp4',
-                        fileName: `🎬ꜱᴀʜᴀꜱ-ᴍᴅ ᴍᴏᴠɪᴇꜱ🎬(${movie.title}).mp4`,
-                        caption: `${movie.title} - ${quality}\n\n> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ꜱᴀʜᴀꜱ ᴛᴇᴄʜ*`
+                        fileName: `🎬MOVIE DOWNLOAD🎬(${movie.title}).mp4`,
+                        caption: `${movie.title} - ${quality}\n\n> > *ᴘᴏᴡᴇʀᴅ ʙʏ ᴀɴɪʟᴀ ʟᴏᴄʜᴀɴᴀ*`
                     });
                 }
             }
