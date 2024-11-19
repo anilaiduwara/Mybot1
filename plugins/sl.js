@@ -27,7 +27,7 @@ async (conn, mek, m, { from, q, reply }) => {
 
         // Step 2: Send the search results to the user
         const sentMsg = await conn.sendMessage(from, {
-            image: { url: `https://files.catbox.moe/de82e3.jpg` },
+            image: { url: `https://telegra.ph/file/3f7249eb429c8211cbba3.jpg` },
             caption: message,  // Send the description as the caption
             contextInfo: {
                 forwardingScore: 999,
@@ -129,8 +129,8 @@ async (conn, mek, m, { from, q, reply }) => {
                                     url: directLink
                                 },
                                 mimetype: 'video/mp4',
-                                fileName: `🎬ꜱᴀʜᴀꜱ-ᴍᴅ ᴍᴏᴠɪᴇꜱ🎬(${movie.title}).mp4`,
-                                caption: `${movie.title} - ${quality}\n\n> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ꜱᴀʜᴀꜱ ᴛᴇᴄʜ*`
+                                fileName: `🎬MOVIE DOWNLOAD🎬(${movie.title}).mp4`,
+                                caption: `${movie.title} - ${quality}\n\n> > *ᴘᴏᴡᴇʀᴅ ʙʏ ᴀɴɪʟᴀ ʟᴏᴄʜᴀɴᴀ*`
                             }, { quoted: mek });
 
                             // React with success
