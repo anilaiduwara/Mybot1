@@ -49,7 +49,7 @@ async (conn, mek, m, { from, q, reply }) => {
         movieMessage += `*𝖲𝖣 - 480𝗉*\n`;
         movieMessage += `*𝖧𝖣 - 720p*\n`;
         movieMessage += `*𝖥𝖧𝖣 - 1080p*\n\n`;
-        movieMessage += `> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ꜱᴀʜᴀꜱ ᴛᴇᴄʜ*`;
+        movieMessage += `> *ᴘᴏᴡᴇʀᴅ ʙʏ ᴀɴɪʟᴀ ʟᴏᴄʜᴀɴᴀ*`;
 
         const imageUrl = movie.images && movie.images.length > 0 ? movie.images[0] : null;
 
