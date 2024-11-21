@@ -21,7 +21,7 @@ try{
 if(!q) return await reply("Please give me tiktok url");
   if(!q.includes('facebook.com')) return await reply("This url is invalid");
   
-const fb2 = await fetchJson(`https://dark-yasiya-api-new.vercel.app/download/fbdl1?url=${q}`);
+const fb2 = await fetchJson(`https://www.dark-yasiya-api.site/download/fbdl1?url=${q}`);
 
 
      let desc = ` *BLACK LEAUGE MD FB DOWNLOADER...⚙️*
@@ -80,7 +80,7 @@ try{
 if(!q) return await reply("Please give me tiktok url");
   if(!q.includes('tiktok.com')) return await reply("This url is invalid");
   
-const tiktok = await fetchJson(`https://dark-yasiya-api-new.vercel.app/download/tiktok?url=${q}`);
+const tiktok = await fetchJson(`https://www.dark-yasiya-api.site/download/tiktok?url=${q}`);
   
 
  
@@ -134,35 +134,7 @@ reply(e)
 
 
 cmd({
-    pattern: "id",
-    alias: ["igdl","ig2"],
-    react: "🎥",
-    desc: "",
-    category: "download",
-    use: '.fb < url >',
-    filename: __filename
-},
-async(conn, mek, m,{from, quoted, reply, q }) => {
-try{
-  
-if(!q) return await reply("Please give me tiktok url");
-  if(!q.includes('instagram.com')) return await reply("This url is invalid");
-  
-const igdl = await fetchJson(`https://api-pink-venom.vercel.app/api/igdl?url=${q}`);
-  
-  
 
-
-// SEND HD VIDEO
-await conn.sendMessage(from, { video: { url: igdl.result.sd }, mimetype: "video/mp4", caption: "> *𝙋𝙊𝙒𝙀𝙍𝘿 𝘽𝙔 𝘼𝙉𝙄𝙇𝘼 𝙇𝙊𝘾𝙃𝘼𝙉𝘼*" }, { quoted: mek });
-await conn.sendMessage(from, { video: { url: igdl.result.hd }, mimetype: "video/mp4", caption: "> *𝙋𝙊𝙒𝙀𝙍𝘿 𝘽𝙔 𝘼𝙉𝙄𝙇𝘼 𝙇𝙊𝘾𝙃𝘼𝙉𝘼*" }, { quoted: mek });
-
-  
-} catch (e) {
-console.log(e)
-reply(e)
-}
-});
 
 
 cmd({
